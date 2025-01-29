@@ -8,6 +8,7 @@ import Profile from './Pages/Profile'
 import ForgotPassword from './Pages/ForgotPassword'
 import SignIn from './Pages/SignIn'
 import SignUp from './Pages/SignUp'
+import Header from './components/Header'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
+      <Header />
         <Routes>
           <Route index element={<Home />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
